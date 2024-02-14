@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bvI-ts-aH8">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MySelf-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Vida" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-tg-gEs">
+                                <rect key="frame" x="154" y="103" width="84" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A bit about me:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yX-H7-vBk">
+                                <rect key="frame" x="16" y="180" width="133" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo of me 1" translatesAutoresizingMaskIntoConstraints="NO" id="CFG-Iy-cYo">
+                                <rect key="frame" x="28" y="369" width="337" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="Uyr-FV-I0k"/>
+                                    <constraint firstAttribute="width" secondItem="CFG-Iy-cYo" secondAttribute="height" multiplier="337:281" id="a4c-0e-rFB"/>
+                                    <constraint firstAttribute="height" constant="281" id="sWe-tO-RiR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opy-vO-M7Z">
+                                <rect key="frame" x="16" y="212" width="361" height="109"/>
+                                <string key="text">I was Born in Southern Colorado. I grew up in rural Northern Mexico. I studied Art for 5 semesters then switched over to Exercise Physiology.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="o2y-tg-gEs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="8lg-2w-W7a"/>
+                            <constraint firstItem="CFG-Iy-cYo" firstAttribute="top" secondItem="opy-vO-M7Z" secondAttribute="bottom" constant="48" id="EPk-4m-Xv1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o2y-tg-gEs" secondAttribute="bottom" constant="634" id="FDv-0j-zao"/>
+                            <constraint firstItem="o2y-tg-gEs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="LXf-NB-tkF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o2y-tg-gEs" secondAttribute="trailing" constant="155" id="btr-MB-dPH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CFG-Iy-cYo" secondAttribute="trailing" constant="28" id="gvQ-eB-9or"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CFG-Iy-cYo" secondAttribute="bottom" constant="119" id="rpW-Yn-aNx"/>
+                            <constraint firstItem="CFG-Iy-cYo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="w6Q-Vs-JfU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MySelf" image="person" catalog="system" id="kJX-7Y-QeW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-860.30534351145036" y="750"/>
+        </scene>
+        <!--MyFamily-->
+        <scene sceneID="hfo-LL-4d3">
+            <objects>
+                <viewController id="4GP-OF-l7a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9UH-vU-kLS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Familia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-7r-DgS">
+                                <rect key="frame" x="140" y="106" width="112" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxh-2Q-obZ">
+                                <rect key="frame" x="83" y="177" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="3fk-mP-yAD">
+                                <rect key="frame" x="16" y="386" width="361" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43p-fw-Wze">
+                                <rect key="frame" x="16" y="177" width="361" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">I've been married to the love of my life for about 4 months now. I am the youngest of three boys. Both of my parents are from Chihuahua, Mexico. My parents live in Texas, my older brother lives in Gypsum Colorado, my oldest brother lives in Tucson, Arizona.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UxJ-hO-BP3"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="UxJ-hO-BP3" firstAttribute="trailing" secondItem="AA9-7r-DgS" secondAttribute="trailing" constant="141" id="HMq-uG-fO4"/>
+                            <constraint firstItem="UxJ-hO-BP3" firstAttribute="bottom" secondItem="AA9-7r-DgS" secondAttribute="bottom" constant="631" id="J3Q-mH-jK1"/>
+                            <constraint firstItem="AA9-7r-DgS" firstAttribute="leading" secondItem="UxJ-hO-BP3" secondAttribute="leading" constant="140" id="a9U-sd-c5E"/>
+                            <constraint firstItem="AA9-7r-DgS" firstAttribute="top" secondItem="UxJ-hO-BP3" secondAttribute="top" constant="47" id="rjK-i5-LAK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MyFamily" image="person.3" catalog="system" id="luM-o8-uzr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPU-3P-vAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="750"/>
+        </scene>
+        <!--MyHobbies-->
+        <scene sceneID="ibI-CV-6MY">
+            <objects>
+                <viewController id="SYB-6N-HpO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2e-Ym-vJp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis Pasatiempos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iei-5v-0v9">
+                                <rect key="frame" x="101" y="101" width="190" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO0-yu-pjh">
+                                <rect key="frame" x="16" y="141" width="361" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">From a very young age I've always enjoyed to cook. I now enjoy cooking different dishes from different cultures. I also love exercise, I love working out and lifting weights.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cooking1" translatesAutoresizingMaskIntoConstraints="NO" id="3fW-VJ-auS">
+                                <rect key="frame" x="16" y="562" width="179" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cooking2" translatesAutoresizingMaskIntoConstraints="NO" id="KHT-BR-sY0">
+                                <rect key="frame" x="203" y="562" width="179" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifting2" translatesAutoresizingMaskIntoConstraints="NO" id="2Dp-He-iUn">
+                                <rect key="frame" x="203" y="386" width="179" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifting1" translatesAutoresizingMaskIntoConstraints="NO" id="Pmx-bD-bti">
+                                <rect key="frame" x="16" y="386" width="179" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q4u-na-6a7"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="Q4u-na-6a7" firstAttribute="bottom" secondItem="iei-5v-0v9" secondAttribute="bottom" constant="636" id="Q2I-bT-yMw"/>
+                            <constraint firstItem="Q4u-na-6a7" firstAttribute="trailing" secondItem="iei-5v-0v9" secondAttribute="trailing" constant="102" id="nRf-Hj-Zjb"/>
+                            <constraint firstItem="iei-5v-0v9" firstAttribute="top" secondItem="Q4u-na-6a7" secondAttribute="top" constant="42" id="pAe-t0-lZX"/>
+                            <constraint firstItem="iei-5v-0v9" firstAttribute="leading" secondItem="Q4u-na-6a7" secondAttribute="leading" constant="101" id="zfm-Qd-bmY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MyHobbies" image="frying.pan" catalog="system" id="GuI-Lu-4vl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggS-l5-bkq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="750"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZPY-vg-fYv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bvI-ts-aH8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lmq-VE-1Qp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="e7w-bc-mqd"/>
+                        <segue destination="4GP-OF-l7a" kind="relationship" relationship="viewControllers" id="3BT-HT-kZr"/>
+                        <segue destination="SYB-6N-HpO" kind="relationship" relationship="viewControllers" id="nVX-Lb-L8E"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjZ-kA-DWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cooking1" width="3024" height="4032"/>
+        <image name="Cooking2" width="3024" height="4032"/>
+        <image name="Family" width="7008" height="4672"/>
+        <image name="Photo of me 1" width="2316" height="3088"/>
+        <image name="frying.pan" catalog="system" width="128" height="81"/>
+        <image name="lifting1" width="750" height="1334"/>
+        <image name="lifting2" width="750" height="1334"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.3" catalog="system" width="128" height="66"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
